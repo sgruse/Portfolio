@@ -74,13 +74,21 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'eslint',
-      }
+      },
+      {
+        test:   /index\.js$/,
+        // load the styles into all of the entry files, should be pulled out by the text extract into bundle.css
+        loader: 'baggage?[dir].scss'
+      },
     ],
     loaders: [
-      // zoolander
       {
           test: /\.scss$/,
           loader: ExtractPlugin.extract('style', 'css!sass', { allChunks: true })
+      },
+      {
+        test:     /\.css$/,
+        loader:   ExtractPlugin.extract('style', 'css!postcss', { allChunks: true }),
       },
       {
           test:    /\.js$/,
@@ -91,13 +99,6 @@ module.exports = {
           test: /\.js$/,
           loader: 'baggage?[file].html=template&[file].scss',
       },
-      // {
-      //     test:   /\.scss$/,
-      //     loader: 'style!css!sass',
-      //     // loader: ExtractPlugin.extract('style', 'css!sass'),
-      //     // Or
-      //     // loaders: ['style', 'css', 'sass'],
-      // },
       {
           test: /\.(png|gif|jpe?g|svg)$/i,
           loader: 'url?limit=10000'
@@ -109,12 +110,10 @@ module.exports = {
       //     limit: 10000,
       //   }
       // },
-      // THIS IS FOR TEMPLATES
       {
           test:   /\.html$/,
           loader: 'html'
       },
-      // THIS IS FOR THE INDEX.HTML FILE
       {
         test:     /\.(ttf|eot)$/,
         loader:   'file'

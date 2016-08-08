@@ -1,0 +1,17 @@
+.active {
+  color: red;
+  background-color: red;
+}
+
+.nav-pills > li.active > a {
+  color: red;
+  background-color: yellow;
+}
+
+a {
+  color: red;
+}
+
+a:active {
+  color: yellow;
+}

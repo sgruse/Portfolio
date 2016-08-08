@@ -7,7 +7,7 @@
         restrict: 'E',
         controller: 'NavController',
         controllerAs: 'navCtrl',
-        template: '<h1>Kamuel</h1>'
+        template: require('./nav-view.html')
         // scope: {
         //   toggleVisibility: '&',
         // },
