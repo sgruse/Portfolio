@@ -4,15 +4,15 @@ var angular = require('angular');
 
 (function() {
   angular.module('App', [
+    'ngRoute',
+    'navModule',
     'HomeModule'
   ])
   .config(['$routeProvider', '$locationProvider', router]);
 
-  // ADD PERSONAL ROUTING
   function router($routeProvider, $locationProvider) {
     $routeProvider.when('/home', {
-      // templateUrl: require('../components/home/home.html'),
-      templateUrl: './home.html',
+      template: require('../../src/components/home/home.html'),
       controller: 'HomeController'
     })
   };
