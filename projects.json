@@ -1,0 +1,10 @@
+{
+  "project one": {
+    "name": "Lucy",
+    "language": "JavaScript"
+  },
+  "project two": {
+    "name": "Spotty",
+    "language": "Python"
+  }
+}
