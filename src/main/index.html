@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="bundle.css" charset="utf-8">
   </head>
-  <body data-ng-app="App">
+  <body data-ng-app="App" data-spy="scroll" data-target="#navToggle" id="mainBody">
     <nav-directive></nav-directive>
+    <h1>This will be the home page</h1>
+    <p>
+      {{lucy}}
+    </p>
 
+    <div class="scrolling" id="portfolio">
+      <p>
+        this is my portfolio
+      </p>
+    </div>
+
+    <div class="scrolling" id="about">
+      <p>
+        about me
+      </p>
+    </div>
     <main data-ng-view></main>
 
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
