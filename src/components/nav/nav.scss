@@ -109,7 +109,7 @@
 //     letter-spacing: 1px;
 //     text-transform: uppercase;
 // }
-
+//
 // .navbar-default .navbar-nav>li>a {
 //     color: #777;
 //     font-weight: 400;
@@ -123,13 +123,22 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
+  overflow-x: hidden;
 }
 
 .navbar-default .navbar-brand {
   color: #fed136;
 }
 
+.navbar {
+  // background-color: transparent;
+}
+
 @media (min-width: 768px) {
+  .navbar {
+    transition: padding .3s;
+  }
+
 //   .container>.navbar-collapse {
 //     margin-right: 0;
 //     margin-left: 0;
