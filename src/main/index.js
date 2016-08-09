@@ -6,14 +6,17 @@ var angular = require('angular');
   angular.module('App', [
     'ngRoute',
     'navModule',
-    'HomeModule'
+    'homeModule'
+    // MainController
   ])
-  .config(['$routeProvider', '$locationProvider', router]);
+  // .config(['$routeProvider', '$locationProvider', router]);
+  //
+  // function router($routeProvider, $locationProvider) {
+  //   $routeProvider.when('/home', {
+  //     template: require('../../src/components/home/home.html'),
+  //     controller: 'homeController'
+  //     // controllerAs: 'homeCtrl'
+  //   })
+  // };
 
-  function router($routeProvider, $locationProvider) {
-    $routeProvider.when('/home', {
-      template: require('../../src/components/home/home.html'),
-      controller: 'HomeController'
-    })
-  };
 })();

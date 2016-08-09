@@ -1,22 +1,46 @@
 (function() {
   angular.module('navModule')
     .controller('NavController', [
+      '$scope',
+      '$location',
+      '$anchorScroll',
       NavBarController
     ]);
-    function NavBarController() {
-      var vm = this;
+    function NavBarController($scope, $location, $anchorScroll) {
 
+      var vm = this;
+// THIS IS THE TOGGLE FUNCTIONALITY FOR THE DROPDOWN NAVBAR
       vm.dropDown = false;
-      vm.toggleDrop = function() {
-        console.log('TOGGLE DROP HIT');
-        if (!vm.dropDown) {
-          console.log('IF HAS BEEN HIT');
-          vm.dropDown = true;
+      vm.changeClass = function() {
+        if(!vm.dropDown) {
+          vm.addClass();
         }
         else {
-          vm.dropDown = false;
+          vm.removeClass();
         }
+      };
+
+      vm.addClass = function() {
+          var newClass = document.getElementById('navToggle');
+          newClass.className += 'in';
+          vm.dropDown = true;
+      };
+      vm.removeClass = function() {
+          var newClass = document.getElementById('navToggle').classList;
+          newClass.remove('collapsein');
+          newClass.add('collapse');
+          vm.dropDown = false;
       }
+
+  // THIS WILL BE THE ANCHOR SCROLL FUNCTIONALITY
+      vm.scrollTo = function(scrollLocation) {
+        console.log('FROM NAV SCROLL TO FUNCTION HAS BEEN HIT WITH : ', scrollLocation);
+        $location.hash(scrollLocation);
+        $anchorScroll();
+      };
+
+
+
     };
 
 })();
