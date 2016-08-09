@@ -6,16 +6,29 @@
     function NavBarController() {
       var vm = this;
 
+// THIS IS THE TOGGLE FUNCTIONALITY FOR THE DROPDOWN NAVBAR
       vm.dropDown = false;
-      vm.toggleDrop = function() {
-        console.log('TOGGLE DROP HIT');
-        if (!vm.dropDown) {
-          console.log('IF HAS BEEN HIT');
-          vm.dropDown = true;
+      vm.changeClass = function() {
+        if(!vm.dropDown) {
+          vm.addClass();
         }
         else {
-          vm.dropDown = false;
+          vm.removeClass();
         }
+      };
+
+      vm.addClass = function() {
+        console.log('add class is hit');
+          var newClass = document.getElementById('navToggle');
+          newClass.className += 'in';
+          vm.dropDown = true;
+      };
+      vm.removeClass = function() {
+        console.log('remove class is hit');
+          var newClass = document.getElementById('navToggle').classList;
+          newClass.remove('collapsein');
+          newClass.add('collapse');
+          vm.dropDown = false;
       }
     };
 
