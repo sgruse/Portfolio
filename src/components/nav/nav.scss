@@ -126,8 +126,12 @@ body {
   overflow-x: hidden;
 }
 
-.navbar-default .navbar-brand {
+.navbar-inverse .navbar-brand {
   color: #fed136;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fed136;
 }
 
 .navbar {

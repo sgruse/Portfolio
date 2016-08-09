@@ -18,5 +18,21 @@ var angular = require('angular');
   //     // controllerAs: 'homeCtrl'
   //   })
   // };
+  .controller('mainController', [
+    '$scope',
+    '$location',
+    '$anchorScroll',
+    MainController
+  ]);
+
+  function MainController($scope, $location, $anchorScroll) {
+    var vm = this;
+
+    $scope.scrollTo = function(scrollLocation) {
+      console.log('SCROLL HAS BEEN HIT WITH : ', scrollLocation);
+      $location.hash(scrollLocation);
+      $anchorScroll();
+    }
+  }
 
 })();
