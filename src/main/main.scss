@@ -193,8 +193,12 @@ img {
   vertical-align: middle;
 }
 
-.image-import {
-  background-image: url('./img/header-bg.jpg');
+// .image-import {
+//   background-image: url('./img/header-bg.jpg');
+// }
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: .8;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -206,6 +210,30 @@ img {
   transition: all ease .5s;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+.fa-plus:before {
+    content: "\f067";
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h2, h4 {
@@ -220,15 +248,56 @@ h2, h4 {
   color: #777;
 }
 
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.moreInfo {
+  z-index: 3;
+}
+
 // FOR THE MEDIA QUERY I WILL NEED A FLOAT LEFT, WIDTH AT 50%, AND MOST LIKELY INLINE
 
 @media (min-width: 768px) {
+
+  #portfolio {
+    // padding: 150px 0;
+  }
+
+  .container {
+    // width: 750px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .col-sm-6 {
     width: 50%;
+  }
+
+  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
     float: left;
-    // position: relative;
+  }
+
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: none;
+    content: " ";
+  }
+
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.3333333%;
+  }
+
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="bundle.css" charset="utf-8">
   </head>
   <body data-ng-app="App" data-spy="scroll" data-target="#navToggle" id="mainBody" ng-controller="mainController">
@@ -18,7 +19,7 @@
             Sam Gruse - Software Developer
           </div>
           <div class="intro-heading">
-            Passionate software developer with a love for learning 
+            Passionate software developer with a love for learning
           </div>
           <!-- Make the TELL ME MORE button use anchor scroll to go to about me page -->
           <a class="page-scroll btn btn-xl" ng-click="scrollTo('about')">Tell Me More</a>
@@ -28,6 +29,7 @@
     </header>
 
     <section class="bg-light-gray" id="portfolio">
+      <!-- PORTFOLIO HEADING -->
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -46,12 +48,14 @@
 -->
 
         <!-- PROJECT ONE -->
-        <div class="row" ng-repeat="project in projectData">
+        <div class="row" ng-repeat="project in projectData" ng-hide="moreInfo == true">
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
+            <a class="portfolio-link">
+              <!-- <div class="portfolio-hover" ng-click="showMore()"> -->
+                <div class="portfolio-hover" ng-click="showProject(project.name)">
+
                 <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
+                  <i class="fa fa-plus fa-3x">Learn More</i>
                 </div>
               </div>
               <img class="img-responsive" src="{{project.imgSrc}}" alt/>
@@ -62,62 +66,17 @@
             </a>
           </div>
         </div>
+        <!-- <div class="moreInfo" ng-show="moreInfo == true" ng-click="showProject(project.name)"> -->
+          <div class="moreInfo" ng-click="showProject(project.name)">
 
-        <!-- PROJECT TWO
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <section class="image-import image-responsive"></section>
-              <div class="portfolio-caption">
-                <h4>Round Icons</h4>
-                <p>Description for project</p>
-              </div>
-            </a>
-          </div>
-        </div> -->
-
-        <!-- PROJECT THREE
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <section class="image-import image-responsive"></section>
-              <div class="portfolio-caption">
-                <h4>Round Icons</h4>
-                <p>Description for project</p>
-              </div>
-            </a>
-          </div>
-        </div> -->
-
-        <!-- PROJECT FOUR
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <section class="image-import image-responsive"></section>
-              <div class="portfolio-caption">
-                <h4>Round Icons</h4>
-                <p>Description for project</p>
-              </div>
-            </a>
-          </div>
-        </div> -->
+          <p>
+            MORE INFO
+          </p>
+          <button type="button" name="button" ng-click="moreInfo = false">Back</button>
+        </div>
       </div>
     </section>
+
 
     <section class="scrolling" id="about">
       <p>
