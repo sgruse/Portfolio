@@ -1,0 +1,39 @@
+[
+  {
+    "projectOne": {
+      "name": "Overbrook Construction",
+      "tech": "Angular",
+      "description": "lksdjflkdsjflksdjflksadjflkasdjf",
+      "url": "overbrookconstructioninc.com",
+      "imgSrc": "img/img.jpg"
+    },
+    "projectTwo": {
+      "name": "Siren Finder",
+      "tech": "Javascript",
+      "description": "lksdjflkdsjflksdjflksadjflkasdjf",
+      "url": "sirenfinderatheroku.com",
+      "imgSrc": "img/img.jpg"
+    },
+    "projectThree": {
+      "name": "Snap Gig",
+      "tech": "Node, Express",
+      "description": "lksdjflkdsjflksdjflksadjflkasdjf",
+      "url": null,
+      "imgSrc": "img/img.jpg"
+    },
+    "projectFour": {
+      "name": "Story Blocks",
+      "tech": "Angular",
+      "description": "lksdjflkdsjflksdjflksadjflkasdjf",
+      "url": null,
+      "imgSrc": "img/img.jpg"
+    },
+    "projectFive": {
+      "name": "Portfolio",
+      "tech": "Angular",
+      "description": "lksdjflkdsjflksdjflksadjflkasdjf",
+      "url": "samGruseportfolio.com",
+      "imgSrc": "img/img.jpg"
+    }
+  }
+]

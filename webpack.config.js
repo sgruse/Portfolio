@@ -118,6 +118,10 @@ module.exports = {
         test:     /\.(ttf|eot)$/,
         loader:   'file'
       },
+      {
+        test: /\.json$/,
+        loader: 'json'
+      }
     ]
   },
   stats: {
