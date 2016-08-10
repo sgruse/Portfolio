@@ -19,21 +19,21 @@ module.exports = [
       "tech": "Node, Express",
       "description": "lksdjflkdsjflksdjflksadjflkasdjf",
       "url": null,
-      "imgSrc": "img/img.jpg"
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder.png')
     },
     "projectFour": {
       "name": "Story Blocks",
       "tech": "Angular",
       "description": "lksdjflkdsjflksdjflksadjflkasdjf",
       "url": null,
-      "imgSrc": "img/img.jpg"
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder.png')
     },
     "projectFive": {
       "name": "Portfolio",
       "tech": "Angular",
       "description": "lksdjflkdsjflksdjflksadjflkasdjf",
       "url": "samGruseportfolio.com",
-      "imgSrc": "img/img.jpg"
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder.png')
     }
   }
 ]
