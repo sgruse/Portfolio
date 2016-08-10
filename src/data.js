@@ -1,18 +1,18 @@
-[
+module.exports = [
   {
     "projectOne": {
       "name": "Overbrook Construction",
       "tech": "Angular",
       "description": "lksdjflkdsjflksdjflksadjflkasdjf",
-      "url": "overbrookconstructioninc.com",
-      "imgSrc": "img/img.jpg"
+      "url": "http://www.overbrookconstructioninc.com/#/home",
+      "imgSrc": require(__dirname + '/main/img/project-images/overbrook.png')
     },
     "projectTwo": {
       "name": "Siren Finder",
       "tech": "Javascript",
       "description": "lksdjflkdsjflksdjflksadjflkasdjf",
-      "url": "sirenfinderatheroku.com",
-      "imgSrc": "img/img.jpg"
+      "url": "http://sirenfinder.herokuapp.com/",
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder.png')
     },
     "projectThree": {
       "name": "Snap Gig",

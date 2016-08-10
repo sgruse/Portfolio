@@ -36,8 +36,17 @@
           </div>
         </div>
 
+<!--
+
+    - BUILD IN LOGIC SO THAT WHEN CLICKED, A PROJECT WILL DISPLAY INDIVIDUAL INFORMATION
+      SAME WAY IT WAS DONE WITH OVERBROOK CONSTRUCTION
+
+    - ALSO ADD PITCTURES SHOWING THE TECHNOLOGY USED SUCH AS NODE, ANGULAR, Express
+      MAYBE IN THE SKILLS SECTION AS WELL
+-->
+
         <!-- PROJECT ONE -->
-        <div class="row">
+        <div class="row" ng-repeat="project in projectData">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
@@ -45,10 +54,10 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <section class="image-import image-responsive"></section>
+              <img class="img-responsive" src="{{project.imgSrc}}" alt/>
               <div class="portfolio-caption">
-                <h4>Round Icons</h4>
-                <p>Description for project</p>
+                <a href="{{project.url}}"><h4>{{project.name}}</h4></a>
+                <p class="text-muted">{{project.description}}</p>
               </div>
             </a>
           </div>
