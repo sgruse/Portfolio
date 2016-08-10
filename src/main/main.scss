@@ -197,6 +197,10 @@ img {
 //   background-image: url('./img/header-bg.jpg');
 // }
 
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: .8;
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254,209,54,.9);
   position: absolute;
@@ -206,6 +210,30 @@ img {
   transition: all ease .5s;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+.fa-plus:before {
+    content: "\f067";
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h2, h4 {
@@ -225,16 +253,20 @@ h2, h4 {
   margin-right: -15px;
 }
 
+.moreInfo {
+  z-index: 3;
+}
+
 // FOR THE MEDIA QUERY I WILL NEED A FLOAT LEFT, WIDTH AT 50%, AND MOST LIKELY INLINE
 
 @media (min-width: 768px) {
 
   #portfolio {
-    padding: 150px 0;
+    // padding: 150px 0;
   }
 
   .container {
-    width: 750px;
+    // width: 750px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -256,10 +288,16 @@ h2, h4 {
     padding-left: 15px;
   }
 
- .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+  .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
     display: none;
     content: " ";
+  }
+
 }
 
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.3333333%;
+  }
 
 }

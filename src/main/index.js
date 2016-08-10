@@ -6,7 +6,7 @@ require(__dirname + '/../services/ajax-service');
 var projectData = require(__dirname + '/../data.js');
 
 (function() {
-  angular.module('App', [
+  var app = angular.module('App', [
     'ngRoute',
     'navModule',
     'homeModule',
@@ -16,13 +16,13 @@ var projectData = require(__dirname + '/../data.js');
   // .config(['$routeProvider', '$locationProvider', router]);
   //
   // function router($routeProvider, $locationProvider) {
-  //   $routeProvider.when('/home', {
-  //     template: require('../../src/components/home/home.html'),
+  //   $routeProvider.when('/projectInfo', {
+  //     template: require('../../src/components/project/projectInfo.html'),
   //     controller: 'homeController'
   //     // controllerAs: 'homeCtrl'
   //   })
-  // };
-  .controller('mainController', [
+  // }
+  app.controller('mainController', [
     '$scope',
     '$location',
     '$anchorScroll',
@@ -32,13 +32,20 @@ var projectData = require(__dirname + '/../data.js');
 
   function MainController($scope, $location, $anchorScroll, ajax) {
     var vm = this;
+
+// MORE INFORMATION FUNCTIONALITY
+    $scope.moreInfo = false;
+    $scope.showMore = function() {
+      $scope.moreInfo = true;
+    };
+
+    $scope.showProject = function(projectName) {
+      console.log('SHOW PROJECT HIT WITH : ' + projectName);
+      // $location.url('/projectInfo');
+    }
+
+// PROJECT DATA FROM REQUIRE STATEMENT
     $scope.projectData = projectData[0];
-    // $scope.projectData;
-    // $scope.getData = function () {
-    //   console.log('GET DATA FUNCTION HAS BEEN HIT');
-    //   $scope.projectData = ajax.getData();
-    //   console.log('PROJECT DATA IS : ', $scope.projectData);
-    // }
     $scope.scrollTo = function(scrollLocation) {
       $location.hash(scrollLocation);
       $anchorScroll();

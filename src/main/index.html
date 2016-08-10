@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="bundle.css" charset="utf-8">
   </head>
   <body data-ng-app="App" data-spy="scroll" data-target="#navToggle" id="mainBody" ng-controller="mainController">
@@ -47,12 +48,14 @@
 -->
 
         <!-- PROJECT ONE -->
-        <div class="row" ng-repeat="project in projectData">
+        <div class="row" ng-repeat="project in projectData" ng-hide="moreInfo == true">
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
+            <a class="portfolio-link">
+              <!-- <div class="portfolio-hover" ng-click="showMore()"> -->
+                <div class="portfolio-hover" ng-click="showProject(project.name)">
+
                 <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
+                  <i class="fa fa-plus fa-3x">Learn More</i>
                 </div>
               </div>
               <img class="img-responsive" src="{{project.imgSrc}}" alt/>
@@ -63,8 +66,17 @@
             </a>
           </div>
         </div>
+        <!-- <div class="moreInfo" ng-show="moreInfo == true" ng-click="showProject(project.name)"> -->
+          <div class="moreInfo" ng-click="showProject(project.name)">
+
+          <p>
+            MORE INFO
+          </p>
+          <button type="button" name="button" ng-click="moreInfo = false">Back</button>
+        </div>
       </div>
     </section>
+
 
     <section class="scrolling" id="about">
       <p>
