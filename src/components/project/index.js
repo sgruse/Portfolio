@@ -1,6 +1,7 @@
 (function() {
   angular.module('modalModule', [
-    'ModalService'
+    'ngAnimate',
+    'ngTouch'
   ]);
 })();
 

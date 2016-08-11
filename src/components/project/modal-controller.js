@@ -7,8 +7,7 @@
     ]);
 
     function modalController($scope, modal){
-      console.log('MODAL IS : ', modal);
-      $scope.dog = modal.currentProject;
+      $scope.projectInfo = modal.currentProject;
 
     };
 })();

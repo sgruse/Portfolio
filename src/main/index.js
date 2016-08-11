@@ -6,15 +6,11 @@ require(__dirname + '/../services/modal-service');
 // var projectData = require(__dirname + '/../data.json');
 var projectData = require(__dirname + '/../data.js');
 
-/*
-  INCLUDE:
-    - ngTouch
-    - ngAnimate
-*/
-
 (function() {
   var app = angular.module('App', [
     'ngRoute',
+    'ngAnimate',
+    'ngTouch',
     'navModule',
     'homeModule',
     'modalModule',
@@ -45,16 +41,13 @@ var projectData = require(__dirname + '/../data.js');
   function MainController($scope, $location, $anchorScroll, $uibModal, ajax, modal) {
     var vm = this;
 
+// ICONS
+    $scope.angularIcon = require('./img/icons/angular-icon.svg');
+
 // MODAL FUNCTIONALITY
     $scope.showProject = function (project) {
-      console.log('SHOW PROJECT HIT WITH : ', project);
       modal.setModal(project);
       setModal();
-      // $scope.modalProject = project;
-      // $uibModal.open({
-      //   template: require(__dirname + '/../components/project/projectInfo.html'),
-      //   controller: 'mainController'
-      // })
     };
 
     function setModal() {
