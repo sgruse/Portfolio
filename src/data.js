@@ -40,7 +40,7 @@ module.exports = [
       "quickDesc": "My personal portfolio",
       "description": "Online portfolio",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
     }
   }
 ]

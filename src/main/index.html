@@ -16,10 +16,10 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">
-            Sam Gruse - Software Developer
+            Sam Gruse - Full Stack Javascript Developer
           </div>
           <div class="intro-heading">
-            Passionate software developer with a love for learning
+            Motivated web developer with a passion for learning and technology
           </div>
           <!-- Make the TELL ME MORE button use anchor scroll to go to about me page -->
           <a class="page-scroll btn btn-xl" ng-click="scrollTo('about')">Tell Me More</a>
@@ -39,15 +39,6 @@
           </div>
         </div>
 
-<!--
-
-    - BUILD IN LOGIC SO THAT WHEN CLICKED, A PROJECT WILL DISPLAY INDIVIDUAL INFORMATION
-      SAME WAY IT WAS DONE WITH OVERBROOK CONSTRUCTION
-
-    - ALSO ADD PITCTURES SHOWING THE TECHNOLOGY USED SUCH AS NODE, ANGULAR, Express
-      MAYBE IN THE SKILLS SECTION AS WELL
--->
-
         <!-- PROJECT ONE -->
         <div class="row" ng-repeat="project in projectData" ng-hide="moreInfo == true">
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -60,7 +51,6 @@
                 </div>
               </div>
               <div class="pic-holder">
-                <!-- <img class="img-responsive project-image" src="{{project.imgSrc}}" alt/> -->
                 <img class="img-responsive project-image" src="{{project.imgSrc}}" alt/>
               </div>
               <div class="portfolio-caption">
@@ -70,25 +60,27 @@
             </a>
           </div>
         </div>
-          <!-- <div class="moreInfo" ng-click="showProject(project.name)">
+      </div>
+    </section>
 
-          <p>
-            MORE INFO
-          </p>
-          <button type="button" name="button" ng-click="moreInfo = false">Back</button>
-        </div> -->
+    <section class="scrolling" id="resume">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">SKILLS</h2>
+        <!-- <img class="img-responsive" src="{{angularIcon}}" alt="" /> -->
+        <!-- <h3 class="section-subheading text-muted">Projects and Contract work</h3> -->
+      </div>
+      <div class="row">
+        <div class="col-md-12 icon-row">
+          <div class="icon-holder" ng-repeat="icon in icons">
+            <img class="img-responsive skills-icon" src="{{icon}}" alt="" />
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="scrolling" id="about">
       <p>
         ABOUT
-      </p>
-    </section>
-
-    <section class="scrolling" id="resume">
-      <p>
-        RESUME
       </p>
     </section>
 

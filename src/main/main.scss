@@ -29,8 +29,6 @@ body {
     color: #fed136;
 }
 
-
-
 // >>>>>>>>>>>>>>>>>>> THIS IS THE HOME LANDING SECTION
 
 header {
@@ -366,8 +364,24 @@ h2, h4 {
     margin-top: 100px;
 }
 
+// >>>>>>>>>>>>>>>>>>> THIS IS THE SKILLS/RESUME SECTION
 
+.icon-row {
+  text-align: center;
+}
 
+.icon-holder {
+  height: 75px;
+  width: 75px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+.skills-icon {
+  width: 100%;
+  height: auto;
+}
 
 
 

@@ -5,6 +5,8 @@ require(__dirname + '/../services/ajax-service');
 require(__dirname + '/../services/modal-service');
 // var projectData = require(__dirname + '/../data.json');
 var projectData = require(__dirname + '/../data.js');
+// var angularIcon = require('./img/icons/angular-icon.svg');
+
 
 (function() {
   var app = angular.module('App', [
@@ -42,7 +44,23 @@ var projectData = require(__dirname + '/../data.js');
     var vm = this;
 
 // ICONS
-    $scope.angularIcon = require('./img/icons/angular-icon.svg');
+    // $scope.angularIcon = require('./img/icons/angular-icon.svg');
+    var angularIcon = require('./img/icons/angular-icon.svg');
+    var nodeIcon = require('./img/icons/node-icon.png');
+    var jsIcon = require('./img/icons/javascript-icon.png');
+    var jqueryIcon = require('./img/icons/jquery-icon.png');
+    var gitIcon = require('./img/icons/git-icon.jpg');
+    var webpackIcon = require('./img/icons/webpack-icon.png');
+    var awsIcon = require('./img/icons/aws-icon.png');
+    var gulpIcon = require('./img/icons/gulp-icon.png');
+    var mochaIcon = require('./img/icons/mocha-icon.svg');
+    var mongoIcon = require('./img/icons/mongo-icon.jpg');
+
+
+
+
+
+    $scope.icons = [angularIcon, nodeIcon, jsIcon, jqueryIcon, gitIcon, webpackIcon, awsIcon, gulpIcon, mochaIcon, mongoIcon];
 
 // MODAL FUNCTIONALITY
     $scope.showProject = function (project) {
