@@ -39,7 +39,7 @@ module.exports = [
       "tech": "Javascript + Angular + NodeJS + Webpack + SASS/CSS",
       "quickDesc": "My personal portfolio",
       "description": "Online portfolio",
-      "url": "samGruseportfolio.com",
+      "url": null,
       "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
     }
   }
