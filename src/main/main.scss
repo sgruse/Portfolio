@@ -370,6 +370,8 @@ h2, h4 {
 
 @media (min-width: 768px) {
 
+// >>>>>>>>>>>>>>>>>>> THIS IS FOR THE PORTFOLIO SECTION
+
   #portfolio {
     // padding: 150px 0;
   }
@@ -408,6 +410,16 @@ h2, h4 {
     display: block;
   }
 
+// >>>>>>>>>>>>>>>>>>> THIS IS FOR THE PORTFOLIO SECTION
+
+.modal-body {
+  margin-right: 140px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -415,4 +427,31 @@ h2, h4 {
     width: 33.3333333%;
   }
 
+  .row {
+    text-align: center;
+  }
+
+  .modal-pic-holder {
+    float: left;
+  }
+
+  .modal-body {
+    margin-right: 350px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .modal-body {
+    margin-right: 550px;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .modal-body {
+    padding: 0px;
+  }
 }
