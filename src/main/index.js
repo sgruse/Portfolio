@@ -55,12 +55,13 @@ var projectData = require(__dirname + '/../data.js');
     var gulpIcon = require('./img/icons/gulp-icon.png');
     var mochaIcon = require('./img/icons/mocha-icon.svg');
     var mongoIcon = require('./img/icons/mongo-icon.jpg');
+    var bootstrapIcon = require('./img/icons/bootstrap-icon.svg');
 
 
 
 
 
-    $scope.icons = [angularIcon, nodeIcon, jsIcon, jqueryIcon, gitIcon, webpackIcon, awsIcon, gulpIcon, mochaIcon, mongoIcon];
+    $scope.icons = [angularIcon, nodeIcon, jsIcon, jqueryIcon, bootstrapIcon, gitIcon, webpackIcon, awsIcon, gulpIcon, mochaIcon, mongoIcon];
 
 // MODAL FUNCTIONALITY
     $scope.showProject = function (project) {

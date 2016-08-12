@@ -26,7 +26,8 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #fed136;
+    // color: #fed136;
+    color: white;
 }
 
 // >>>>>>>>>>>>>>>>>>> THIS IS THE HOME LANDING SECTION
@@ -383,6 +384,38 @@ h2, h4 {
   height: auto;
 }
 
+// FONTS FOR TECH SECTION
+
+#siteWrapper {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.6em;
+    font-family: "proxima-nova";
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(26,26,26,.6);
+    padding: 20px;
+    // border-left: 1px solid black;
+    // height: 100%;
+}
+
+.skills-list {
+  // border-left: 1px solid black;
+  height: 100%;
+  list-style: none;
+  margin-top: 2px;
+  margin-right: 100px;
+}
+
+li {
+  text-decoration: none;
+}
+
+.work-description {
+
+}
 
 
 
