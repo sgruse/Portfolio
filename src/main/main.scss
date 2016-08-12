@@ -176,6 +176,12 @@ h3.section-subheading {
   font-family: Montserrat;
 }
 
+.project-imgae {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
 // POSSIBLY NEEDED FOR IMAGES IN PORT
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
   display: block;
@@ -191,6 +197,11 @@ h3.section-subheading {
 
 img {
   vertical-align: middle;
+}
+
+.modal-pic-holder {
+  // padding-top: 200px;
+  // height: 100px;
 }
 
 // .image-import {
@@ -244,6 +255,11 @@ h2, h4 {
   font-weight: 700;
 }
 
+// .portfolio-item {
+//   width: 100px;
+//   height: 100px;
+// }
+
 .text-muted {
   color: #777;
 }
@@ -256,6 +272,99 @@ h2, h4 {
 .moreInfo {
   z-index: 3;
 }
+
+  // .project-image {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 20px;
+  //   font-size: 20px;
+  // }
+  //
+  // .project-image {
+  //   position: relative;
+  //   // float: left;
+  //   display: block;
+  //   text-align: center;
+  //   width:  100px;
+  //   height: 100px;
+  //   background-position: 50% 50%;
+  //   background-repeat:   no-repeat;
+  //   background-size:     cover;
+  // }
+
+// >>>>>>>>>>>>>>>>>>> THIS IS FOR THE MODAL SECTION
+
+  .fade .in {
+      opacity: 1;
+  }
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    margin: 20px;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal .in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.modal .fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+
+.portfolio-modal .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
+
+.portfolio-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.col-lg-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 100px;
+}
+
+
+
+
+
+
 
 // FOR THE MEDIA QUERY I WILL NEED A FLOAT LEFT, WIDTH AT 50%, AND MOST LIKELY INLINE
 
@@ -291,6 +400,12 @@ h2, h4 {
   .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
     display: none;
     content: " ";
+  }
+
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
 }
