@@ -37,10 +37,10 @@ module.exports = [
     "projectFive": {
       "name": "My Portfolio",
       "tech": "Javascript + Angular + NodeJS + Webpack + SASS/CSS",
-      "quickDesc": "Personal portfolio display my projectslksjdflkdsjflkjlk",
+      "quickDesc": "My personal portfolio",
       "description": "Online portfolio",
-      "url": "samGruseportfolio.com",
-      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+      "url": null,
+      "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
     }
   }
 ]

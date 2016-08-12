@@ -25,6 +25,11 @@ body {
   height: 800px;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    // color: #fed136;
+    color: white;
+}
+
 // >>>>>>>>>>>>>>>>>>> THIS IS THE HOME LANDING SECTION
 
 header {
@@ -360,15 +365,69 @@ h2, h4 {
     margin-top: 100px;
 }
 
+// >>>>>>>>>>>>>>>>>>> THIS IS THE SKILLS/RESUME SECTION
 
+.icon-row {
+  text-align: center;
+}
 
+.icon-holder {
+  height: 75px;
+  width: 75px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
 
+.skills-icon {
+  width: 100%;
+  height: auto;
+}
+
+// FONTS FOR TECH SECTION
+
+#siteWrapper {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.6em;
+    font-family: "proxima-nova";
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(26,26,26,.6);
+    padding: 20px;
+    // border-left: 1px solid black;
+    // height: 100%;
+}
+
+.skills-list {
+  // border-left: 1px solid black;
+  height: 100%;
+  list-style: none;
+  margin-top: 2px;
+  margin-right: 100px;
+}
+
+li {
+  text-decoration: none;
+}
+
+.work-description {
+  // margin-right: 40px;
+}
+
+.workTitle {
+  margin-right: 20px;
+}
 
 
 
 // FOR THE MEDIA QUERY I WILL NEED A FLOAT LEFT, WIDTH AT 50%, AND MOST LIKELY INLINE
 
 @media (min-width: 768px) {
+
+// >>>>>>>>>>>>>>>>>>> THIS IS FOR THE PORTFOLIO SECTION
 
   #portfolio {
     // padding: 150px 0;
@@ -408,6 +467,16 @@ h2, h4 {
     display: block;
   }
 
+// >>>>>>>>>>>>>>>>>>> THIS IS FOR THE PORTFOLIO SECTION
+
+.modal-body {
+  margin-right: 140px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -415,4 +484,35 @@ h2, h4 {
     width: 33.3333333%;
   }
 
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .modal-pic-holder {
+    float: left;
+  }
+
+  .modal-body {
+    margin-right: 350px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .modal-body {
+    margin-right: 550px;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .modal-body {
+    padding: 0px;
+  }
 }
