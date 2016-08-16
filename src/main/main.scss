@@ -405,8 +405,19 @@ h2, h4 {
   // border-left: 1px solid black;
   height: 100%;
   list-style: none;
-  margin-top: 2px;
+  text-align: left;
+  margin-top: 20px;
   margin-right: 100px;
+  padding: 0px;
+}
+
+
+.resume-headers {
+  text-align: left;
+}
+
+.work-header, .job-description {
+  text-align: left;
 }
 
 li {
