@@ -67,6 +67,9 @@ var projectData = require(__dirname + '/../data.js');
     var soundCloud = require('./img/icons/soundcloud.svg');
 
     $scope.myPic = require('./img/portfolio-pic.png');
+    $scope.uwPic = require('./img/icons/uw.jpg');
+    $scope.cfPic = require('./img/icons/codeFellows.png');
+    $scope.hammer = require('./img/icons/hammer.png');
     $scope.socials = [linkedIn, gitHub, twitter, soundCloud];
 
 
