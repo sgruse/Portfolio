@@ -28,29 +28,31 @@ let plugins = [
   }),
 ];
 
-// if (production) {
-//   plugins = plugins.concat([
-//     new webpack.optimize.DedupePlugin(),
-//     new webpack.optimize.OccurenceOrderPlugin(),
-//     new webpack.optimize.MinChunkSizePlugin({
-//       minChunkSize: 51200, // ~50kb
-//     }),
-//     new webpack.optimize.UglifyJsPlugin({
-//       mangle:   true,
-//       compress: {
-//         warnings: false, // Suppress uglification warnings
-//       },
-//     }),
-//     new webpack.DefinePlugin({
-//       __SERVER__:      !production,
-//       __DEVELOPMENT__: !production,
-//       __DEVTOOLS__:    !production,
-//       'process.env':   {
-//         BABEL_ENV: JSON.stringify(process.env.NODE_ENV),
-//       },
-//     }),
-//   ])
-// };
+
+// POSSIBLE ISSUES HAPPENING WITH THIS
+if (production) {
+  plugins = plugins.concat([
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.MinChunkSizePlugin({
+      minChunkSize: 51200, // ~50kb
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      mangle:   true,
+      compress: {
+        warnings: false, // Suppress uglification warnings
+      },
+    }),
+    new webpack.DefinePlugin({
+      __SERVER__:      !production,
+      __DEVELOPMENT__: !production,
+      __DEVTOOLS__:    !production,
+      'process.env':   {
+        BABEL_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
+    }),
+  ])
+};
 
 module.exports = {
   debug:   !production,
