@@ -1,7 +1,7 @@
 module.exports = [
   {
     "projectOne": {
-      "name": "Overbrook Construction",
+      "name": "Overbrook",
       "tech": "Javacript + Angular + NodeJS + AWS S3 + MongoDB",
       "quickDesc": "Full stack application",
       "description": "I joined Overbrook Construction to completely redesign their website, giving it a modern look and advanced mapping functionality.  I transformed a custom wireframe into a full stack application using AngularJS, ExpressJS, NodeJS, and MongoDB linked with Amazon’s S3 storage system.  The site displays Overbrook’s entire portfolio of completed, current and future homes, leveraging the Google Maps API to plot each location on an interactive map.  Internally, I built custom content management system that allows Overbrook admins the ability to easily update their site and was successful in a complete transformation of Overbrook's online brand.",
@@ -24,19 +24,19 @@ module.exports = [
       "quickDesc": "Collaboration platform for freelancers",
       "description": "Custom, fully RESTful backend for a freelance collaboration platform targeted at both freelancers and business owners.  Using custom authorization and social sharing middleware, users can post gigs, work submissions, and manage deadlines. Amazon AWS / S3 is leveraged as a persistence layer for relevant data.",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+      // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
 
-      // "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png')
     },
     "projectFour": {
       "name": "Story Blocks",
       "tech": "Javascript + Angular + NodeJS + MongoDB + Gulp + SASS/CSS",
-      "quickDesc": "Displays API information through a 3D interface",
+      "quickDesc": "Displays API info via a 3D interface",
       "description": "Story Blocks connects to different API's and displays relevant news and articles through a unique 3D interface. This project leverages SASS/SCSS for a streamlined design.",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+      // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
 
-      // "imgSrc": require(__dirname + '/main/img/project-images/storyblocks.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/storyblocks-two.png')
     },
     "projectFive": {
       "name": "My Portfolio",
@@ -44,9 +44,9 @@ module.exports = [
       "quickDesc": "My personal portfolio",
       "description": "Online portfolio",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+      // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
 
-      // "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
     }
   }
 ]

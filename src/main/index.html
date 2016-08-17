@@ -19,7 +19,7 @@
             Sam Gruse - Full Stack Javascript Developer
           </div>
           <div class="intro-heading">
-            Motivated web developer with a passion for learning and technology
+            Driven developer with a passion for technology
           </div>
           <!-- Make the TELL ME MORE button use anchor scroll to go to about me page -->
           <a class="page-scroll btn btn-xl" ng-click="scrollTo('about')">Tell Me More</a>
@@ -53,7 +53,7 @@
                 <img class="img-responsive project-image" src="{{project.imgSrc}}" alt/>
               </div>
               <div class="portfolio-caption">
-                <a href="{{project.url}}"><h4>{{project.name}}</h4></a>
+                <a href="" ng-click="showProject(project)"><h4>{{project.name}}</h4></a>
                 <p class="text-muted">{{project.quickDesc}}</p>
               </div>
             </a>
@@ -139,7 +139,7 @@
             </div>
             <div class="job-description">
               <p class="text-muted">
-                The experience I gained during my time at Code Fellows was invaluable and opened the door to the amazing field of computer science
+                My experience at Code Fellows was amazing.  All day every day for 8 months I was coding with and surronded by excellent instructors and motivated students.  In addition to learning industry best practices, I've gained the ability to quickly research solutions when problems arise, proving to be a huge strength moving forward.
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@
                 <img class="school-pic" src="{{uwPic}}" alt="" />
               </div>
             </div>
-            <p class="text-muted">Coursework in communications and computer science</p>
+            <p class="text-muted">Completed coursework in communications and computer science.</p>
             </div>
             <div class="job-description">
             </div>
@@ -180,20 +180,42 @@
           </div>
           <div class="">
             <div class="col-md-12 profile-pic-holder">
+              <div class="col-md-12">
                 <img class="img-circle profile-img" src="{{myPic}}" alt="" />
-              <div class="col col-sm-12">
+              </div>
+              <div class="col col-sm-12 about-information">
                 <h3>Who am I?</h3>
-                <p>
+                <p class="about-text">
                   Thanks for checking out my page!  My name is Sam Gruse, I'm 27 years old and love to program.  I'm definatley a team player and am extremely passionate about improving my skills as a devloper every day.
                 </p>
                 <h3>What I'm looking for</h3>
-                <p>
+                <p class="about-text">
                   I'm currently seeking full time employment at a company in Seattle or the greater the Seattle area.  Though my skills primarily revolve around front end work, my ability to learn quickly and love for challenges leaves me interested in many developing roles so lets get in touch!
                 </p>
                 <h3>My background</h3>
-                <p>
+                <p class="about-text">
                   Before entering the world of programming I spent many years in the customer service industry.  During this time I became an expert at customer relations, gaining the ability to read and get along with anybody, meet deadlines under pressure, and always remain positive.  Combining my people and programming skills together, I'm confident that I will make a great addition to your team and am excited to hear from you.
                 </p>
+              </div>
+
+              <div class="row contact-information">
+                <div class="col-md-12">
+                  <div class="col-md-4">
+                    <p>
+                      Phone: <span class="contact-info">253-306-2736</span>
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>
+                      Email: <span class="contact-info">sgruse89@gmail.com</span>
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>
+                      Location: <span class="contact-info">Seattle / Greater Seattle</span>
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div class="row">

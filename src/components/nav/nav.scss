@@ -115,7 +115,7 @@
 //     font-weight: 400;
 //     letter-spacing: 1px;
 // }
-
+//
 
 
 
@@ -134,8 +134,37 @@ body {
   background-color: #fed136;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fed136;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+.navbar-custom .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136;
+}
+
+// .yellow-jello {
+//   color: red;
+// }
+//
+// .nav-tab {
+//   color: blue;
+// }
+
 .navbar {
   // background-color: transparent;
+}
+
+.navbar-custom .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136;
 }
 
 @media (min-width: 768px) {
