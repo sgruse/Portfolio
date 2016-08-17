@@ -550,6 +550,18 @@ li {
     text-align: center;
 }
 
+.contact-info {
+  font-style: italic;
+}
+
+.contact-information {
+  margin-top: 50px;
+}
+
+.about-information {
+}
+
+
 // FOR THE MEDIA QUERY I WILL NEED A FLOAT LEFT, WIDTH AT 50%, AND MOST LIKELY INLINE
 
 @media (max-width: 768px) {
@@ -654,6 +666,11 @@ li {
 
   .modal-body {
     // margin-right: 350px;
+  }
+
+  .about-text {
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
 }
