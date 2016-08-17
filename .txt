@@ -1,1 +1,3 @@
 "postinstall": "webpack --config ./webpack.config.js --progress --colors",
+
+node_modules/.bin/webpack
