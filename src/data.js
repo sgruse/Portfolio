@@ -24,7 +24,9 @@ module.exports = [
       "quickDesc": "Collaboration platform for freelancers",
       "description": "Custom, fully RESTful backend for a freelance collaboration platform targeted at both freelancers and business owners.  Using custom authorization and social sharing middleware, users can post gigs, work submissions, and manage deadlines. Amazon AWS / S3 is leveraged as a persistence layer for relevant data.",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+
+      // "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png')
     },
     "projectFour": {
       "name": "Story Blocks",
@@ -32,7 +34,9 @@ module.exports = [
       "quickDesc": "Displays API information through a 3D interface",
       "description": "Story Blocks connects to different API's and displays relevant news and articles through a unique 3D interface. This project leverages SASS/SCSS for a streamlined design.",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/storyblocks.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+
+      // "imgSrc": require(__dirname + '/main/img/project-images/storyblocks.png')
     },
     "projectFive": {
       "name": "My Portfolio",
@@ -40,7 +44,9 @@ module.exports = [
       "quickDesc": "My personal portfolio",
       "description": "Online portfolio",
       "url": null,
-      "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
+
+      // "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
     }
   }
 ]
