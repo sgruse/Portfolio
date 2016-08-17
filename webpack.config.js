@@ -60,8 +60,8 @@ module.exports = {
   entry: PATHS.entry,
   output: {
     path: PATHS.build,
-    filename: production ? '[name]-[hash].js' : 'bundle.js',
-    chunkFilename: '[name]-[chunkhash].js'
+    filename: 'bundle.js'
+    // chunkFilename: '[name]-[chunkhash].js'
     // publicPath: 'builds/'
   },
   devServer: {
