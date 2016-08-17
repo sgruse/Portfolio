@@ -19,7 +19,7 @@
             Sam Gruse - Full Stack Javascript Developer
           </div>
           <div class="intro-heading">
-            Motivated web developer with a passion for learning and technology
+            Driven developer with a passion for technology
           </div>
           <!-- Make the TELL ME MORE button use anchor scroll to go to about me page -->
           <a class="page-scroll btn btn-xl" ng-click="scrollTo('about')">Tell Me More</a>
@@ -53,7 +53,7 @@
                 <img class="img-responsive project-image" src="{{project.imgSrc}}" alt/>
               </div>
               <div class="portfolio-caption">
-                <a href="{{project.url}}"><h4>{{project.name}}</h4></a>
+                <a href="" ng-click="showProject(project)"><h4>{{project.name}}</h4></a>
                 <p class="text-muted">{{project.quickDesc}}</p>
               </div>
             </a>
