@@ -1,4 +1,5 @@
 require('!!file?name=[name].[ext]!./main/index.html');
+require('./data.js');
 
 require('angular');
 require('angular-route');
