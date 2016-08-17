@@ -57,11 +57,22 @@ var projectData = require(__dirname + '/../data.js');
     var mongoIcon = require('./img/icons/mongo-icon.jpg');
     var bootstrapIcon = require('./img/icons/bootstrap-icon.svg');
 
-
-
-
-
     $scope.icons = [angularIcon, nodeIcon, jsIcon, jqueryIcon, bootstrapIcon, gitIcon, webpackIcon, awsIcon, gulpIcon, mochaIcon, mongoIcon];
+
+// Social Icon
+
+    var linkedIn = require('./img/icons/linkedin.svg');
+    var gitHub = require('./img/icons/github.svg');
+    var twitter = require('./img/icons/twitter.svg');
+    var soundCloud = require('./img/icons/soundcloud.svg');
+
+    $scope.myPic = require('./img/portfolio-pic.png');
+    $scope.uwPic = require('./img/icons/uw.jpg');
+    $scope.cfPic = require('./img/icons/codeFellows.png');
+    $scope.hammer = require('./img/icons/hammer.png');
+    $scope.socials = [linkedIn, gitHub, twitter, soundCloud];
+
+
 
 // MODAL FUNCTIONALITY
     $scope.showProject = function (project) {
