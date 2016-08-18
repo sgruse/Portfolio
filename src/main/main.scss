@@ -569,8 +569,25 @@ li {
     text-align: center;
   }
 
+  .yuppers {
+    height: 2px;
+  }
+
   body {
     overflow-x: hidden;
+    margin: 0px;
+  }
+
+  section {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .col-md-12, .col-sm-12, .about-information, .icon-row {
+    // margin: 0px;
+    // padding: 0px;
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 
@@ -671,6 +688,10 @@ li {
   .about-text {
     margin-left: 200px;
     margin-right: 200px;
+  }
+
+  .modal-body {
+    margin-right: 140px;
   }
 
 }
