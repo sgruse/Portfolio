@@ -1,13 +1,3 @@
-// body {
-//   overflow-x: hidden;
-//   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-//   font-size: 14px;
-//   line-height: 1.42857143;
-//   color: #333;
-//   background-color: #fff;
-//   margin: 0;
-// }
-
 // >>>>>>>>>>>>>>>>>>> UNIVERSAL
 
 div {
@@ -91,19 +81,6 @@ header .intro-text .intro-heading {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
-//   text-align: center;
-//   white-space: nowrap;
-//   vertical-align: middle;
-//   -ms-touch-action: manipulation;
-//   touch-action: manipulation;
-//   cursor: pointer;
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-//   background-image: none;
-//   border: 1px solid transparent;
-//   border-radius: 4px;
 }
 
 // >>>>>>>>>>>>>>>>>>> THIS IS THE PORTFOLIO SECTION
@@ -205,15 +182,6 @@ img {
   vertical-align: middle;
 }
 
-.modal-pic-holder {
-  // padding-top: 200px;
-  // height: 100px;
-}
-
-// .image-import {
-//   background-image: url('./img/header-bg.jpg');
-// }
-
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: .8;
 }
@@ -261,11 +229,6 @@ h2, h4 {
   font-weight: 700;
 }
 
-// .portfolio-item {
-//   width: 100px;
-//   height: 100px;
-// }
-
 .text-muted {
   color: #777;
   padding-top: 10px;
@@ -285,24 +248,6 @@ h2, h4 {
     height: 145px;
 }
 
-  // .project-image {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 20px;
-  //   font-size: 20px;
-  // }
-  //
-  // .project-image {
-  //   position: relative;
-  //   // float: left;
-  //   display: block;
-  //   text-align: center;
-  //   width:  100px;
-  //   height: 100px;
-  //   background-position: 50% 50%;
-  //   background-repeat:   no-repeat;
-  //   background-size:     cover;
-  // }
 
 // >>>>>>>>>>>>>>>>>>> THIS IS FOR THE MODAL SECTION
 
@@ -436,8 +381,6 @@ h2, h4 {
     font-style: normal;
     color: rgba(26,26,26,.6);
     padding: 20px;
-    // border-left: 1px solid black;
-    // height: 100%;
 }
 
 .tech-section {
@@ -445,7 +388,6 @@ h2, h4 {
 }
 
 .skills-list {
-  // border-left: 1px solid black;
   height: 100%;
   list-style: none;
   text-align: left;
@@ -453,7 +395,6 @@ h2, h4 {
   margin-right: 100px;
   padding: 0px;
 }
-
 
 .resume-headers {
   text-align: left;
@@ -532,16 +473,6 @@ li {
   border-bottom: dotted;
 }
 
-// .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
-// {
-//     position: relative;
-//     min-height: 1px;
-//     padding-right: 15px;
-//     padding-left: 15px;
-//     // text-align: center;
-//     // float: left;
-// }
-
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     position: relative;
     min-height: 1px;
@@ -557,10 +488,6 @@ li {
 .contact-information {
   margin-top: 50px;
 }
-
-.about-information {
-}
-
 
 // FOR THE MEDIA QUERY I WILL NEED A FLOAT LEFT, WIDTH AT 50%, AND MOST LIKELY INLINE
 
@@ -584,8 +511,6 @@ li {
   }
 
   .col-md-12, .col-sm-12, .about-information, .icon-row {
-    // margin: 0px;
-    // padding: 0px;
     overflow-x: hidden;
     width: 100%;
   }

@@ -3,9 +3,7 @@
 var angular = require('angular');
 require(__dirname + '/../services/ajax-service');
 require(__dirname + '/../services/modal-service');
-// var projectData = require(__dirname + '/../data.json');
 var projectData = require(__dirname + '/../data.js');
-// var angularIcon = require('./img/icons/angular-icon.svg');
 
 
 (function() {
@@ -43,7 +41,6 @@ var projectData = require(__dirname + '/../data.js');
     var vm = this;
 
 // ICONS
-    // $scope.angularIcon = require('./img/icons/angular-icon.svg');
     var angularIcon = require('./img/icons/angular-icon.svg');
     var nodeIcon = require('./img/icons/node-icon.png');
     var jsIcon = require('./img/icons/javascript-icon.png');
@@ -59,7 +56,6 @@ var projectData = require(__dirname + '/../data.js');
     $scope.icons = [angularIcon, nodeIcon, jsIcon, jqueryIcon, bootstrapIcon, gitIcon, webpackIcon, awsIcon, gulpIcon, mochaIcon, mongoIcon];
 
 // Social Icon
-
     var linkedIn = require('./img/icons/linkedin.svg');
     var gitHub = require('./img/icons/github.svg');
     var twitter = require('./img/icons/twitter.svg');
@@ -70,8 +66,6 @@ var projectData = require(__dirname + '/../data.js');
     $scope.cfPic = require('./img/icons/codeFellows.png');
     $scope.hammer = require('./img/icons/hammer.png');
     $scope.socials = [linkedIn, gitHub, twitter, soundCloud];
-
-
 
 // MODAL FUNCTIONALITY
     $scope.showProject = function (project) {
@@ -85,17 +79,6 @@ var projectData = require(__dirname + '/../data.js');
         controller: 'ModalController'
       })
     };
-
-// MORE INFORMATION FUNCTIONALITY
-    // $scope.moreInfo = false;
-    // $scope.showMore = function() {
-    //   $scope.moreInfo = true;
-    // };
-
-    // $scope.showProject = function(projectName) {
-    //   console.log('SHOW PROJECT HIT WITH : ' + projectName);
-    //   // $location.url('/projectInfo');
-    // }
 
 // PROJECT DATA FROM REQUIRE STATEMENT
     $scope.projectData = projectData[0];

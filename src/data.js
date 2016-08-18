@@ -24,8 +24,6 @@ module.exports = [
       "quickDesc": "Collaboration platform for freelancers",
       "description": "Custom, fully RESTful backend for a freelance collaboration platform targeted at both freelancers and business owners.  Using custom authorization and social sharing middleware, users can post gigs, work submissions, and manage deadlines. Amazon AWS / S3 is leveraged as a persistence layer for relevant data.",
       "url": null,
-      // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
-
       "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png'),
       "imgTwo": require(__dirname + '/main/img/project-images/snapgig-two.jpg')
     },
@@ -35,19 +33,15 @@ module.exports = [
       "quickDesc": "Displays API info via a 3D interface",
       "description": "Story Blocks connects to different API's and displays relevant news and articles through a unique 3D interface. This project leverages SASS/SCSS for a streamlined design.",
       "url": null,
-      // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
-
       "imgSrc": require(__dirname + '/main/img/project-images/storyblocks-two.png'),
       "imgTwo": require(__dirname + '/main/img/project-images/blocks-two.png')
     },
     "projectFive": {
       "name": "My Portfolio",
-      "tech": "Javascript + Angular + NodeJS + Webpack + SASS/CSS",
+      "tech": "Javascript + Angular + NodeJS + Webpack + SASS/CSS + Bootstrap",
       "quickDesc": "My personal portfolio",
-      "description": "Online portfolio",
+      "description": "This is the portfolio you are currently viewing!  I had a lot of fun making it and used it as an opportunity to dive deep into the wonderfulness that is Webpack.  Utilizing the Bootstrap grid system and custom SASS/CSS, I was very happy with the way everything turned out.",
       "url": null,
-      // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
-
       "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png'),
       "imgTwo": require(__dirname + '/main/img/project-images/portfolio-two.jpg')
     }
