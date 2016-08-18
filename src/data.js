@@ -31,7 +31,7 @@ module.exports = [
       "name": "Story Blocks",
       "tech": "Javascript + Angular + NodeJS + MongoDB + Gulp + SASS/CSS",
       "quickDesc": "Displays API info via a 3D interface",
-      "description": "Story Blocks connects to different API's and displays relevant news and articles through a unique 3D interface. This project leverages SASS/SCSS for a streamlined design.",
+      "description": "Story Blocks is a project that my team and I created during our time at Code Fellows.  The goal of the project was to create a platform in which users could access various social media sites such as Facebook, Reddit and Twitter, and have desired information displayed on 3D cubes made with vanilla SASS/CSS.  This project offered a great opportunity to learn OAuth as well the unique UI/UX that can be created through custom SASS/CSS.",
       "url": null,
       "imgSrc": require(__dirname + '/main/img/project-images/storyblocks-two.png'),
       "imgTwo": require(__dirname + '/main/img/project-images/blocks-two.png')
