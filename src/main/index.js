@@ -14,7 +14,6 @@ var projectData = require(__dirname + '/../data.js');
     'ngAnimate',
     'ngTouch',
     'navModule',
-    'homeModule',
     'modalModule',
     'ui.bootstrap',
     'AjaxService',
