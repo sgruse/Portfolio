@@ -5,7 +5,7 @@ module.exports = [
       "tech": "Javacript + Angular + NodeJS + AWS S3 + MongoDB",
       "quickDesc": "Full stack application",
       "description": "I joined Overbrook Construction to completely redesign their website, giving it a modern look and advanced mapping functionality.  I transformed a custom wireframe into a full stack application using AngularJS, ExpressJS, NodeJS, and MongoDB linked with Amazon’s S3 storage system.  The site displays Overbrook’s entire portfolio of completed, current and future homes, leveraging the Google Maps API to plot each location on an interactive map.  Internally, I built custom content management system that allows Overbrook admins the ability to easily update their site and was successful in a complete transformation of Overbrook's online brand.",
-      "url": "http://www.overbrookconstructioninc.com",
+      "url": "http://bit.ly/2b5KxtK",
       "imgSrc": require(__dirname + '/main/img/project-images/overbrook-main.png'),
       "imgTwo": require(__dirname + '/main/img/project-images/overbrook-map.png')
     },
@@ -26,7 +26,8 @@ module.exports = [
       "url": null,
       // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
 
-      "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/snapgig.png'),
+      "imgTwo": require(__dirname + '/main/img/project-images/snapgig-two.jpg')
     },
     "projectFour": {
       "name": "Story Blocks",
@@ -36,7 +37,8 @@ module.exports = [
       "url": null,
       // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
 
-      "imgSrc": require(__dirname + '/main/img/project-images/storyblocks-two.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/storyblocks-two.png'),
+      "imgTwo": require(__dirname + '/main/img/project-images/blocks-two.png')
     },
     "projectFive": {
       "name": "My Portfolio",
@@ -46,7 +48,8 @@ module.exports = [
       "url": null,
       // "imgSrc": require(__dirname + '/main/img/project-images/sirenfinder-main.png')
 
-      "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png')
+      "imgSrc": require(__dirname + '/main/img/project-images/portfoliopic.png'),
+      "imgTwo": require(__dirname + '/main/img/project-images/portfolio-two.jpg')
     }
   }
 ]

@@ -8,6 +8,5 @@ require('angular-animate');
 require('angular-touch');
 require('./components/project');
 require('./components/nav');
-require('./components/home');
 
 require('./main');
