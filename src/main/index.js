@@ -42,15 +42,15 @@ var projectData = require(__dirname + '/../data.js');
 
 // ICONS
     var angularIcon = require('./img/icons/angular-icon.svg');
-    var nodeIcon = require('./img/icons/node-icon.png');
+    var nodeIcon = require('./img/icons/node-icon.jpeg');
     var jsIcon = require('./img/icons/javascript-icon.png');
     var jqueryIcon = require('./img/icons/jquery-icon.png');
     var gitIcon = require('./img/icons/git-icon.jpg');
     var webpackIcon = require('./img/icons/webpack-icon.png');
-    var awsIcon = require('./img/icons/aws-icon.png');
+    var awsIcon = require('./img/icons/aws-icon.jpeg');
     var gulpIcon = require('./img/icons/gulp-icon.png');
     var mochaIcon = require('./img/icons/mocha-icon.svg');
-    var mongoIcon = require('./img/icons/mongo-icon.jpg');
+    var mongoIcon = require('./img/icons/mongo-icon.png');
     var bootstrapIcon = require('./img/icons/bootstrap-icon.svg');
 
     $scope.icons = [angularIcon, nodeIcon, jsIcon, jqueryIcon, bootstrapIcon, gitIcon, webpackIcon, awsIcon, gulpIcon, mochaIcon, mongoIcon];
