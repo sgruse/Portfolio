@@ -38,9 +38,5 @@
         $location.hash(scrollLocation);
         $anchorScroll();
       };
-
-
-
     };
-
 })();
